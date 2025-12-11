@@ -34,9 +34,6 @@ The circuit consists of an Arduino Uno R3 microcontroller connected to the follo
 
 The system works by continuously monitoring sensor inputs and comparing them with predefined conditions. If any condition is met, the relay switches the fan on; otherwise, it remains off. The LCD provides feedback for easier monitoring and debugging.
 
-![Circuit Diagram](./images/circuit_diagram.png)
-> Replace this path with your actual diagram file if you upload it in a folder called `images`.
-
 ## How It Works
 1. The Arduino continuously reads the PIR and DS18B20 sensor values.
 2. If motion is detected, the system immediately turns on the fan.
@@ -45,15 +42,6 @@ The system works by continuously monitoring sensor inputs and comparing them wit
 5. LCD display updates every second, showing current time, date and temperature.
 6. The system prioritizes safety and avoids simultaneous conflicting signals.
 
-## Code
-The Arduino code is uploaded in this repository as `VentilationSystem.ino`.
-
-## Photos / Screenshots
-![Tinkercad Simulation](./images/tinkercad_simulation.png)
-![Physical Circuit](./images/physical_circuit.jpg)
-> Replace these paths with the actual file names you upload.
-
-## Future Improvements
 - Add a menu system on the LCD to adjust time, temperature threshold, or schedules directly from the hardware.
 - Implement data logging (temperature, motion, fan activation) using the AT24C32 memory or SD-card module.
 - Add hysteresis control to prevent the fan from turning on/off repeatedly around the threshold temperature.
